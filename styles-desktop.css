@@ -3,7 +3,36 @@ html {
 }
 
 body {
-  font-family: 'Raleway'; sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
+  color: black;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 52px;
+  margin-left: 55px;
+  margin-top: 48px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header img {
+
+}
+
+nav a {
+  padding: 46px 25px 46px 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+nav a:hover {
+  border-top: solid 2px #0065FC;
+  color: #0065FC;
+}
