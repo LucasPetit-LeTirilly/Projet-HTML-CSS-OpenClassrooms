@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -144,3 +144,208 @@ input[type="submit"] {
   color: #0065FC;
   margin-right: 10px;
 }
+
+.rubriques {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 39px;
+  margin-right: 50px;
+  gap: 40px;
+}
+
+.hebergements {
+  background-color:#F2F2F2;
+  width: 880px;
+  height: 626px;
+  border-radius: 20px;
+}
+
+.hebergements h1 {
+  margin-top: 42px;
+  margin-bottom: 23px;
+  margin-left: 40px;
+}
+
+.hebergements h2 {
+  margin-top: 40px;
+  margin-bottom: 46px;
+  margin-left: 44px;
+}
+
+.image-hebergement {
+  width: 246px;
+  height: 199px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.image-hebergement img {
+  border-radius: 20px 20px 0px 0px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.image-hebergement i {
+  font-size: 12px;
+}
+
+
+.image-hebergement h3 {
+  margin-top: 4px;
+  padding-left: 16px;
+}
+
+.image-hebergement p {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 16px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  
+}
+
+b {
+  font-weight: 600;
+}
+
+.image-hebergement .premiere-etoile {
+  padding-left: 16px;
+}
+
+.etoile-bleue {
+  color: #0065FC;
+}
+
+.etoile-blanche {
+  color: #F2F2F2;
+}
+
+.populaire {
+  width: 420px;
+  height: 625px;
+  background-color:#F2F2F2;
+  border-radius: 20px;
+}
+
+.mosaic-hebergement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.populaire i {
+  color: #0065FC;
+  margin-top: 41px;
+}
+
+.populaire h1 {
+  margin-right: 118px;
+  margin-left: 37px;
+  margin-top: 41px;
+}
+
+.entete-populaire {
+  display: flex;
+}
+
+.image-populaire {
+  width: 343px;
+  height: 144px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 37px;
+  margin-top: 26px;
+  display: flex;
+
+}
+
+.image-populaire img {
+  border-radius: 20px 0px 0px 20px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.texte-populaire {
+  margin-top: 16px;
+  padding-right: 50px;
+}
+
+.image-populaire p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 9px;
+}
+
+.image-populaire .texte-populaire {
+  margin-left: 15px;
+}
+
+.image-populaire .etoile-blanche {
+  color: #F2F2F2;
+}
+
+.image-populaire i {
+  font-size: 12px;
+  margin-top: 28px;
+}
+
+.activites {
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.ligne-carte {
+  margin-top: 18px;
+  display: flex;
+  gap: 43px;
+}
+
+.carte h3 {
+  width: 282px;
+  height: 56px;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.07);
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: -3px;
+}
+
+.carte img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+footer {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 60px;
+  background-color: #F2F2F2;
+  display: flex;
+  gap: 240px;
+  padding-left: 70px;
+}
+
+.colonne {
+  margin-bottom: 58px;
+  margin-top: 45px;
+}
+
+.colonne h2 {
+  margin-bottom: 20px;
+}
+
+
