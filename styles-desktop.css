@@ -6,6 +6,8 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   color: black;
+  margin: 0px;
+  font-weight: 400;
 }
 
 header {
@@ -22,17 +24,123 @@ a {
   color: inherit;
 }
 
-header img {
-
-}
-
 nav a {
   padding: 46px 25px 46px 25px;
   margin-left: 0px;
   margin-right: 0px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 nav a:hover {
   border-top: solid 2px #0065FC;
   color: #0065FC;
+}
+
+h1, h2, h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0px;
+}
+
+article {
+  margin-left: 55px;
+  margin-top: 67px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+article h1 {
+  margin-bottom: 8px;
+}
+
+.recherche {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+article .recherche i {
+  background-color: #F2F2F2;
+  padding: 18px 16px 18px 16px;
+  border-radius: 40% 0% 0% 40%;
+}
+
+input[type="text"] {
+  width: 220px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  border: 1px #F2F2F2 solid;
+  padding-left: 17px;
+  margin-right: 0px;
+}
+
+input[type="submit"] {
+  width: 130px;
+  height: 52px;
+  margin-left: -4px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #0065FC;
+  color: white;
+  border: none;
+  border-radius: 0% 15px 15px 0%;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.filtres {
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.item-filtre {
+  display: flex;
+  align-items: center;
+  border: rgb(242, 242, 242, 1) solid 3px;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.item-filtre:hover {
+  background-color: #DEEBFF;
+}
+
+.item-filtre i {
+  color: #0065FC;
+  margin-right: 10px;
+}
+
+.texte-filtre {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.info i {
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: #D9D9D9 solid 1px;
+  border-radius: 50%;
+  color: #0065FC;
+  margin-right: 10px;
 }
