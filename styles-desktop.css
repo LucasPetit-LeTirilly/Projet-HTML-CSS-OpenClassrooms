@@ -8,8 +8,8 @@ body {
   color: black;
   margin: 0px;
   font-weight: 400;
-  margin-left: 7.7rem;
-  margin-right: 7.7rem;
+  margin-left: 123px;
+  margin-right: 123px;
 }
 
 header {
@@ -162,6 +162,12 @@ input[type="submit"] {
   border-radius: 20px;
 }
 
+.format-image-hebergement {
+  width: 236px;
+  height: 105px;
+  object-fit: cover;
+}
+
 .hebergements h1 {
   margin-top: 42px;
   margin-bottom: 23px;
@@ -242,6 +248,12 @@ b {
   border-radius: 20px;
 }
 
+.format-image-populaire {
+  width: 132px;
+  height: 134px;
+  object-fit: cover;  
+}
+
 .mosaic-hebergement {
   display: flex;
   flex-direction: row;
@@ -315,6 +327,12 @@ b {
   margin-top: 18px;
   display: flex;
   gap: 43px;
+}
+
+.format-image-activites {
+  width: 302px;
+  height: 445px;
+  object-fit: cover;  
 }
 
 .carte h3 {
