@@ -8,15 +8,15 @@ body {
   color: black;
   margin: 0px;
   font-weight: 400;
-  margin-left: 123px;
-  margin-right: 123px;
+  margin-left: 2.6em;
+  margin-right: 2.6em;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 52px;
+  margin-right: 77px;
   margin-left: 55px;
   margin-top: 48px;
 }
@@ -28,8 +28,6 @@ a {
 
 nav a {
   padding: 46px 25px 46px 25px;
-  margin-left: 0px;
-  margin-right: 0px;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -366,4 +364,20 @@ footer {
 
 .colonne h2 {
   margin-bottom: 20px;
+}
+
+/* media query tablet */
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+
+/* media query phone */
+
+
+@media screen and (max-width: 576px) {
+
 }
