@@ -16,9 +16,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 77px;
-  margin-left: 55px;
-  margin-top: 48px;
+  margin-right: 20px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.format-logo-booki {
+  width: 61px;
+  height: 19px;
 }
 
 a {
@@ -386,10 +391,46 @@ footer {
 
   .hebergements {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
   }
+
+  .carte-hebergement {
+    width: 268px;
+    height: 207px;
+  }
+
+  .hebergements h1 {
+    margin-left: 30px;
+  }
+
+  .hebergements .mosaic-hebergement {
+    margin-left: 30px;
+  }
+
+  .hebergements h2 {
+    margin-left: 30px;
+  }
+
+  .format-image-hebergement {
+    width: 258px;
+    height: 124px;
+  }
+  
+  .carte-hebergement h3 {
+    margin-top: 2px;
+    padding-left: 16px;
+  }
+  
+  .carte-hebergement p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    }
 
   .populaire {
   width: 924px;
@@ -417,7 +458,6 @@ footer {
   .mosaic-populaire {
     display: flex;
     justify-content: space-around;
-    margin-left: 22px;
   }
 
   .format-image-populaire {
