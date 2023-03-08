@@ -51,7 +51,7 @@ h1, h2, h3 {
   margin: 0px;
 }
 
-article {
+.entete-recherche {
   margin-left: 55px;
   margin-top: 67px;
 }
@@ -61,7 +61,7 @@ h1 {
   font-size: 22px;
 }
 
-article h1 {
+.entete-recherche h1 {
   margin-bottom: 8px;
 }
 
@@ -75,7 +75,7 @@ article h1 {
   display: none;
 }
 
-article .recherche .location {
+.recherche .location {
   background-color: #F2F2F2;
   padding: 18px 16px 18px 16px;
   border-radius: 40% 0% 0% 40%;
@@ -600,7 +600,7 @@ footer {
     color: #0065FC;
   }
 
-  article {
+  .entete-recherche {
     margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
