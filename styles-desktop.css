@@ -71,7 +71,11 @@ article h1 {
   align-items: flex-start;
 }
 
-article .recherche i {
+.recherche button {
+  display: none;
+}
+
+article .recherche .location {
   background-color: #F2F2F2;
   padding: 18px 16px 18px 16px;
   border-radius: 40% 0% 0% 40%;
@@ -107,9 +111,19 @@ input[type="submit"] {
 
 .filtres {
   display: flex;
+  flex-direction: row;
   margin-top: 30px;
-  gap: 40px;
+  gap: 15px;
 }
+
+.liste-item-filtre {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    column-gap: 15px;
+  }
 
 .item-filtre {
   display: flex;
@@ -209,6 +223,7 @@ b {
   height: 199px;
   background-color: white;
   border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .format-image-hebergement {
@@ -281,8 +296,9 @@ b {
   height: 144px;
   background-color: white;
   border-radius: 20px;
-  margin-top: 26px;
+  margin-top: 15px;
   display: flex;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .carte-populaire img {
@@ -334,7 +350,7 @@ b {
   width: 282px;
   height: 56px;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.07);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   padding-top: 20px;
   padding-left: 20px;
   margin-top: -3px;
@@ -430,18 +446,18 @@ footer {
     margin-bottom: 6px;
     }
 
-    .populaire {
+  .populaire {
   width: 924px;
   height: 250px;
   padding-left: 0px;
   }
   
-    .entete-populaire {
+  .entete-populaire {
     display: flex;
     justify-content: space-between;
   }
 
-    .populaire h1 {
+  .populaire h1 {
     margin-left: 30px;
     margin-right: 585px;
     margin-top: 30px;
@@ -525,12 +541,286 @@ footer {
 
 }
 
-
-
-
-/* media query phone */
-
-
 @media screen and (max-width: 576px) {
 
+  body {
+    margin: 0px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+  }
+
+  header img {
+    margin-top: 0px;
+    margin-right: 14px;
+  }
+  
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  nav a {
+    display: block;
+    padding: 0px 0px 15px 0px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: solid 2px #F2F2F2;
+  }
+  
+  a[href="#hebergements"] {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  a[href="#activites"] {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  nav a:hover {
+    border-top: none;
+    border-bottom: solid 2px #0065FC;
+    color: #0065FC;
+  }
+
+  nav a:active {
+    border-top: none;
+    border-bottom: solid 2px #0065FC;
+    color: #0065FC;
+  }
+
+  article {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  form {
+    position: relative;
+  }
+
+  .recherche {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  input[type="text"] {
+    width: 235px;
+    height: 48px;
+    padding-left: 17px;
+    margin-right: 0px;
+  }
+
+  input[value="Rechercher"] {
+    display: none;
+  }
+
+  .recherche button {
+    display: block;
+  }
+
+  button {
+    display: block;
+    width: 49px;
+    height: 52px;
+    border-radius: 15px;
+    background-color: #0065FC;
+    position: absolute;
+    top: 0px;
+    right: -35px;
+    border: none;
+  }
+
+  button i {
+    font-size: 1em;
+    color: white;
+  } 
+
+  .texte-filtre {
+    display: block;
+  }
+
+  .filtres {
+    display: block;
+  }
+
+  .liste-item-filtre {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  .item-filtre {
+    display: flex;
+    align-items: center;
+    width: 137px;
+    border: rgb(242, 242, 242, 1) solid 3px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-size: 17px;
+    font-weight: 900;
+  }
+
+  .item-filtre p {
+    font-size: 14px;
+  }
+
+  .info {
+    margin-top: 15px;
+  }
+
+  .rubriques {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    gap: 40px;
+  }
+
+  .populaire {
+    width: 375px;
+    height: 563px;
+    gap: 0px;
+  }
+
+  .mosaic-populaire {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .entete-populaire h1 {
+    margin-right: 0px;
+  }
+
+  .carte-populaire {
+    width: 316px;
+    height: 144px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: flex;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Refaire mieux le placement des etoiles */
+
+  .carte-populaire-1 i {
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
+
+    .carte-populaire-2 i , .carte-populaire-3 i {
+    margin-top: 45px;
+    margin-bottom: 0px;
+  }
+
+  .carte-populaire p {
+    margin-bottom: 0px;
+  }
+
+  .hebergements {
+    order: 1;
+    width: 375px;
+    height: 1435px;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+
+  .hebergements h1 {
+      margin-top: -10px;
+  }
+
+  .carte-hebergement {
+    width: 316px;
+    height: 207px;
+  }
+  
+  .format-image-hebergement {
+    width: 306px;
+    height: 124px;
+  }
+
+  .mosaic-hebergement {
+    gap: 15px;
+  }
+  
+  .hebergements h2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .activites {
+    margin-top: 33px;
+    margin-left: 30px;
+  }
+
+  .ligne-carte-activite {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .carte-activite h3 {
+    width: 295px;
+    height: 44px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-top: -4px;
+  }
+  
+  .format-image-activites {
+    width: 315px;
+    height: 141px;
+    object-fit: cover;  
+  }
+
+  footer {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 65px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 11px;
+  }
+  
+  .colonne {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  
+  .colonne h2 {
+    margin-bottom: 15px;
+  }
+
+  .colonne p {
+    margin-top: -5px;
+  }
 }
