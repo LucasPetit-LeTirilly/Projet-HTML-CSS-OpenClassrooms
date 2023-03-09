@@ -7,17 +7,21 @@ body {
   font-size: 1rem;
   color: black;
   margin: 0px;
+  max-width: 1440px;
+  width: 100%;
   font-weight: 400;
-  margin-left: 2.6em;
-  margin-right: 2.6em;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
-  margin-left: 35px;
   margin-top: 15px;
+  margin-left: 30px;
 }
 
 header img {
@@ -38,11 +42,16 @@ nav a {
   padding: 13px 25px 46px 25px;
   font-weight: 500;
   font-size: 1rem;
+  margin-right: 16px;
 }
 
 nav a:hover {
   border-top: solid 2px #0065FC;
   color: #0065FC;
+}
+
+main {
+  margin-left: 50px;
 }
 
 h1, h2, h3 {
@@ -52,7 +61,6 @@ h1, h2, h3 {
 }
 
 .entete-recherche {
-  margin-left: 55px;
   margin-top: 67px;
 }
 
@@ -185,50 +193,57 @@ b {
 
 .rubriques {
   display: flex;
-  margin-left: 50px;
+  width: 100%;
   margin-top: 39px;
-  margin-right: 50px;
   gap: 40px;
 }
 
 .hebergements {
   background-color:#F2F2F2;
-  width: 880px;
-  height: 626px;
+  height: 100%;
+  max-width: 841px;
   border-radius: 20px;
   padding-left: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .mosaic-hebergement {
+  min-height: 444px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  align-content: flex-start;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
 }
 
 .hebergements h1 {
-  margin-top: 42px;
-  margin-bottom: 23px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hebergements h2 {
-  margin-top: 40px;
-  margin-bottom: 46px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .carte-hebergement {
-  width: 246px;
-  height: 199px;
+  max-width: 250px;
+  max-height: 207px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px;
 }
 
 .format-image-hebergement {
-  width: 236px;
-  height: 105px;
+  width: 95%;
+  height: 60%;
   object-fit: cover;
 }
 
@@ -238,13 +253,17 @@ b {
   padding-top: 5px;
 }
 
+.carte-hebergement h2 {
+  font-size: 18px;
+}
+
 .carte-hebergement i {
   font-size: 12px;
 }
 
 
 .carte-hebergement h3 {
-  margin-top: 4px;
+  margin-top: 2px;
   padding-left: 16px;
 }
 
@@ -253,8 +272,8 @@ b {
   font-size: 14px;
   font-weight: 400;
   padding-left: 16px;
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 3px;
+  margin-bottom: 0px;
   }
 
 .carte-hebergement .premiere-etoile {
@@ -270,35 +289,50 @@ b {
 }
 
 .populaire {
-  width: 420px;
-  height: 625px;
+  height: 100%;
   background-color:#F2F2F2;
   border-radius: 20px;
-  padding-left: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .entete-populaire {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.populaire h1 {
-  margin-right: 118px;
-  margin-top: 41px;
+.mosaic-populaire {
+  height: 85%;
+  max-width: 369px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 28.5px;
 }
 
 .populaire i {
   color: #0065FC;
-  margin-top: 41px;
 }
 
 .carte-populaire {
-  width: 343px;
+  max-width: 369px;
   height: 144px;
   background-color: white;
   border-radius: 20px;
-  margin-top: 15px;
   display: flex;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.format-image-populaire {
+  width: 33%;
+  max-height: 95%;
+  padding-bottom: 2%;
+  object-fit: cover;  
 }
 
 .carte-populaire img {
@@ -307,28 +341,36 @@ b {
   padding-left: 5px;
 }
 
-.format-image-populaire {
-  width: 132px;
-  height: 134px;
-  object-fit: cover;  
-}
-
-
 .texte-populaire {
-  margin-top: 16px;
-  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
   margin-left: 15px;
 }
 
+.ligne-texte-populaire {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .carte-populaire p {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 9px;
 }
 
 .carte-populaire i {
   font-size: 12px;
-  margin-top: 28px;
+  margin: 0px;
+}
+
+.liste-etoile {
+  display: flex;
+  flex-direction: row;
 }
 
 .carte-populaire .etoile-blanche {
@@ -336,29 +378,36 @@ b {
 }
 
 .activites {
-  margin-left: 50px;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+}
+
+.activites h1 {
+  margin-bottom: 30px;
 }
 
 .ligne-carte-activite {
-  margin-top: 18px;
   display: flex;
-  gap: 43px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
-.carte-activite h3 {
-  width: 282px;
-  height: 56px;
-  border-radius: 0px 0px 20px 20px;
+.carte-activite {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  max-width: 297px;
+  max-height: 439px;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-  padding-top: 20px;
-  padding-left: 20px;
-  margin-top: -3px;
+  background-color: white;
 }
 
 .format-image-activites {
-  width: 302px;
-  height: 445px;
+  width: 100%;
+  height: 380px;
   object-fit: cover;  
 }
 
@@ -366,9 +415,13 @@ b {
   border-radius: 20px 20px 0px 0px;
 }
 
+.carte-activite h3 {
+  padding: 20px 0px 20px 20px;
+}
+
 footer {
   margin-left: 50px;
-  margin-right: 50px;
+  max-width: 1324px;
   margin-top: 60px;
   background-color: #F2F2F2;
   display: flex;
@@ -411,8 +464,8 @@ footer {
   }
 
   .carte-hebergement {
-    width: 268px;
-    height: 207px;
+    max-width: 268px;
+    max-height: 207px;
   }
 
   .hebergements h1 {
@@ -428,8 +481,8 @@ footer {
   }
 
   .format-image-hebergement {
-    width: 258px;
-    height: 124px;
+    min-width: 96%;
+    height: 40%;
   }
   
   .carte-hebergement h3 {
@@ -718,27 +771,15 @@ footer {
     display: flex;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   }
-
-  /* Refaire mieux le placement des etoiles */
-
-  .carte-populaire-1 i {
-    margin-top: 65px;
-    margin-bottom: 0px;
-  }
-
-    .carte-populaire-2 i , .carte-populaire-3 i {
-    margin-top: 45px;
-    margin-bottom: 0px;
-  }
-
+  
   .carte-populaire p {
     margin-bottom: 0px;
   }
 
   .hebergements {
     order: 1;
-    width: 375px;
-    height: 1435px;
+    width: 100%;
+    min-height: 1435px;
     background-color: white;
     border-radius: 0px;
     margin-top: 0px;
@@ -750,13 +791,13 @@ footer {
   }
 
   .carte-hebergement {
-    width: 316px;
-    height: 207px;
+    max-width: 100%;
+    max-height: 207px;
   }
   
   .format-image-hebergement {
-    width: 306px;
-    height: 124px;
+    max-width: 33%;
+    min-height: 96%;
   }
 
   .mosaic-hebergement {
