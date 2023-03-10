@@ -292,7 +292,6 @@ b {
 }
 
 .populaire {
-  height: 100%;
   background-color:#F2F2F2;
   border-radius: 20px;
   padding-left: 30px;
@@ -309,8 +308,6 @@ b {
 }
 
 .mosaic-populaire {
-  height: 85%;
-  max-width: 369px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -328,6 +325,7 @@ b {
   background-color: white;
   border-radius: 20px;
   display: flex;
+  flex-direction: row;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -539,7 +537,7 @@ footer {
     margin-left: 30px;
   }
 
-  .hebergements .mosaic-hebergement {
+  .mosaic-hebergement {
     margin-left: 30px;
   }
 
@@ -578,7 +576,6 @@ footer {
   }
   
   .mosaic-populaire {
-    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -589,7 +586,6 @@ footer {
   }
   
   .carte-populaire {
-    flex-basis: 100%;
     max-width: 275px;
     border-radius: 20px;
   }
@@ -645,39 +641,23 @@ footer {
   .colonne-3 {
     margin-left: 29px;
   }
-  /* footer {
-    margin-left: 50px;
-    max-width: 1324px;
-    margin-top: 60px;
-    background-color: #F2F2F2;
-    display: flex;
-    gap: 245px;
-    padding-left: 20px;
-  }
   
-  .colonne {
-    margin-bottom: 58px;
-    margin-top: 20px;
-  }
-  
-  .colonne h2 {
-    margin-bottom: 20px;
-  }
-  
-  .colonne-3 {
-    margin-left: 60px;
-  } */
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
 
   body {
     margin: 0px;
+    width: 100%;
+    max-width: 375px;
+    margin: auto;
   }
 
   header {
     flex-direction: column;
     align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 30px;
@@ -685,35 +665,25 @@ footer {
 
   header img {
     margin-top: 0px;
-    margin-right: 14px;
   }
   
   nav {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-left: 0px;
     margin-right: 0px;
   }
 
   nav a {
-    display: block;
+    text-align: center;
+    width: 50%;
     padding: 0px 0px 15px 0px;
     font-weight: 500;
     font-size: 1rem;
     margin-left: 0px;
     margin-right: 0px;
     border-bottom: solid 2px #F2F2F2;
-  }
-  
-  a[href="#hebergements"] {
-    padding-left: 43px;
-    padding-right: 43px;
-  }
-
-  a[href="#activites"] {
-    padding-left: 65px;
-    padding-right: 65px;
   }
 
   nav a:hover {
@@ -728,10 +698,19 @@ footer {
     color: #0065FC;
   }
 
+  main {
+    margin-left: 0px;
+  }
+
   .entete-recherche {
     margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .entete-populaire h1 {
+    font-size: 22px;
+    font-weight: 700;
   }
 
   form {
@@ -781,6 +760,7 @@ footer {
 
   .filtres {
     display: block;
+    margin-top: 35px;
   }
 
   .liste-item-filtre {
@@ -819,81 +799,108 @@ footer {
     margin-left: 0px;
     margin-top: 20px;
     margin-right: 0px;
-    gap: 40px;
+    row-gap: 40px;
   }
 
   .populaire {
-    width: 375px;
-    height: 563px;
     gap: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .mosaic-populaire {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 0px;
+    row-gap: 15px;
+  }
+
+  .carte-populaire {
+    max-width: 335px;
+  }
+
+  .format-image-populaire {
+    min-width: 33%;
   }
 
   .entete-populaire h1 {
     margin-right: 0px;
   }
 
-  .carte-populaire {
-    width: 316px;
-    height: 144px;
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 15px;
-    display: flex;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-  }
-  
   .carte-populaire p {
     margin-bottom: 0px;
   }
-
+  
   .hebergements {
     order: 1;
-    width: 100%;
-    min-height: 1435px;
     background-color: white;
     border-radius: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: 20px;
     }
 
-  .hebergements h1 {
-      margin-top: -10px;
+  .mosaic-hebergement {
+    gap: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0px;
   }
 
   .carte-hebergement {
-    max-width: 100%;
+    max-width: 335px;
     max-height: 207px;
   }
   
   .format-image-hebergement {
-    max-width: 33%;
-    min-height: 96%;
+    width: 96%;
+    height: 60%;
   }
 
-  .mosaic-hebergement {
-    gap: 15px;
-  }
-  
+  .hebergements h1 {
+    margin-top: -10px;
+    margin-left: 0px;
+}
   .hebergements h2 {
     margin-top: 15px;
     margin-bottom: 0px;
+    margin-left: 0px;
   }
 
   .activites {
-    margin-top: 33px;
+    margin-top: 85px;
     margin-left: 30px;
   }
 
+  .activites h1 {
+    margin-bottom: 0px;
+  }
+
   .ligne-carte-activite {
-    margin-top: 18px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 15px;
+    margin-top: 30px;
+  }
+
+  .carte-activite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 315px;
+    max-height: 200px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .format-image-activites {
+    width: 315px;
+    height: 141px;
+    object-fit: cover;  
   }
   
   .carte-activite h3 {
@@ -901,19 +908,12 @@ footer {
     height: 44px;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 20px;
-    margin-top: -4px;
   }
   
-  .format-image-activites {
-    width: 315px;
-    height: 141px;
-    object-fit: cover;  
-  }
-
   footer {
-    width: 100%;
+    max-width: 375px  ;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 65px;
@@ -923,7 +923,7 @@ footer {
     row-gap: 50px;
     padding-left: 0px;
     padding-top: 30px;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
   }
   
   .colonne {
@@ -939,4 +939,27 @@ footer {
   .colonne p {
     margin-top: -5px;
   }
+
+  /* footer {
+    margin-left: 50px;
+    max-width: 1324px;
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    display: flex;
+    gap: 245px;
+    padding-left: 20px;
+  }
+  
+  .colonne {
+    margin-bottom: 58px;
+    margin-top: 20px;
+  }
+  
+  .colonne h2 {
+    margin-bottom: 20px;
+  }
+  
+  .colonne-3 {
+    margin-left: 60px;
+  } */
 }
