@@ -845,6 +845,7 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 20px;
+    margin-right: 20px;
     }
 
   .mosaic-hebergement {
@@ -856,6 +857,7 @@ footer {
   }
 
   .carte-hebergement {
+    width: 100%;
     max-width: 335px;
     max-height: 207px;
   }
@@ -912,7 +914,6 @@ footer {
   }
   
   .carte-activite h3 {
-    width: 295px;
     height: 44px;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
