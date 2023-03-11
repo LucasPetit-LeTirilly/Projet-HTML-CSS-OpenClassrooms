@@ -862,7 +862,9 @@ footer {
   
   .format-image-hebergement {
     width: 96%;
+    max-width: 335px;
     height: 60%;
+    max-height: 124px;
   }
 
   article h1 {
