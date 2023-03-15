@@ -43,9 +43,9 @@ a {
 }
 
 nav a {
-  padding: 13px 25px 46px 25px;
   font-weight: 500;
   font-size: 1rem;
+  padding: 13px 25px 46px 25px;
 }
 
 nav {
@@ -60,6 +60,10 @@ nav a:hover {
 main {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+b {
+  font-weight: 600;
 }
 
 h1, h2, h3 {
@@ -83,14 +87,25 @@ h2 {
   margin: 0px;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0px;
+}
+
 .entete-recherche h1 {
   margin-bottom: 8px;
 }
 
 .recherche {
-  margin-top: 20px;
   display: flex;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 .recherche button {
@@ -117,11 +132,11 @@ input[type="text"] {
 input[type="submit"] {
   width: 130px;
   height: 52px;
-  margin-left: -4px;
   font-weight: 700;
   font-size: 18px;
   background-color: #0065FC;
   color: white;
+  margin-left: -4px;
   border: none;
   border-radius: 0% 15px 15px 0%;
 }
@@ -156,14 +171,12 @@ input[type="submit"] {
 .item-filtre {
   display: flex;
   align-items: center;
-  border: rgb(242, 242, 242, 1) solid 3px;
-  border-radius: 25px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
   font-size: 17px;
   font-weight: 900;
+  border: rgb(242, 242, 242, 1) solid 3px;
+  border-radius: 25px;
+  padding: 20px 20px 20px 20px;
+
 }
 
 .item-filtre:hover {
@@ -187,24 +200,11 @@ input[type="submit"] {
 }
 
 .info i {
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 9px;
-  padding-bottom: 9px;
   border: #D9D9D9 solid 1px;
   border-radius: 50%;
   color: #0065FC;
+  padding: 9px 14px 9px 14px;
   margin-right: 10px;
-}
-
-h4 {
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0px;
-}
-
-b {
-  font-weight: 600;
 }
 
 .rubriques {
@@ -215,14 +215,14 @@ b {
 
 .hebergements {
   max-width: 62%;
-  background-color:#F2F2F2;
-  height: 100%;
-  border-radius: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100%;
+  background-color:#F2F2F2;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .mosaic-hebergement {
@@ -245,8 +245,6 @@ b {
 .hebergements h3 {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .carte-hebergement {
@@ -266,8 +264,8 @@ b {
 
 .carte-hebergement img {
   border-radius: 20px 20px 0px 0px;
-  padding-left: 5px;
   padding-top: 5px;
+  padding-left: 5px;
 }
 
 .carte-hebergement h4 {
@@ -331,11 +329,11 @@ aside i {
 
 .carte-populaire {
   max-width: 100%;
-  background-color: white;
-  border-radius: 20px;
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
+  background-color: white;
+  border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -368,10 +366,10 @@ aside i {
 }
 
 .carte-populaire p {
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .carte-populaire i {
@@ -432,14 +430,14 @@ aside i {
 }
 
 footer {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 60px;
-  background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  background-color: #F2F2F2;
   gap: 252px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 60px;
   padding-left: 20px;
 }
 
@@ -450,11 +448,6 @@ footer {
   row-gap: 15px;
   margin-bottom: 58px;
   margin-top: 20px;
-}
-
-.colonne h3 {
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .colonne-3 {
@@ -502,14 +495,10 @@ footer {
   .item-filtre {
     display: flex;
     align-items: center;
-    border: rgb(242, 242, 242, 1) solid 3px;
-    border-radius: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 17px;
     font-weight: 900;
+    border: rgb(242, 242, 242, 1) solid 3px;
+    border-radius: 25px;
   }
 
   .item-filtre p {
@@ -536,10 +525,10 @@ footer {
 
   .hebergements {
     max-width: 924px;
-    padding-left: 0px;
-    padding-right: 5px;
     display: flex;
     flex-direction: column;
+    padding-left: 0px;
+    padding-right: 5px;
   }
   
   .carte-hebergement {
@@ -668,10 +657,7 @@ footer {
   header {
     flex-direction: column;
     align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px 30px 0px;
     gap: 30px;
   }
 
@@ -690,11 +676,11 @@ footer {
   nav a {
     text-align: center;
     width: 50%;
-    padding: 0px 0px 15px 0px;
     font-weight: 500;
     font-size: 1rem;
     margin-left: 0px;
     margin-right: 0px;
+    padding: 0px 0px 15px 0px;
     border-bottom: solid 2px #F2F2F2;
   }
 
@@ -803,12 +789,12 @@ footer {
     align-items: center;
     flex: 1 1 0px;
     width: 50%;
+    font-size: 17px;
+    font-weight: 900;
     border: rgb(242, 242, 242, 1) solid 3px;
     border-radius: 25px;
     padding-left: 20px;
     padding-right: 25px;
-    font-size: 17px;
-    font-weight: 900;
   }
 
   .item-filtre p {
@@ -862,11 +848,8 @@ footer {
     order: 1;
     background-color: white;
     border-radius: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    }
+    margin: 0px 20px 0px 20px;
+  }
 
   .mosaic-hebergement {
     gap: 15px;
@@ -945,9 +928,6 @@ footer {
   
   footer {
     max-width: 768px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 65px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -955,6 +935,9 @@ footer {
     padding-left: 0px;
     padding-top: 30px;
     padding-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 65px;
   }
   
   .colonne {
