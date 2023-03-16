@@ -1,4 +1,4 @@
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,7 +66,9 @@ b {
   font-weight: 600;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-size: inherit;
   font-weight: inherit;
   margin: 0px;
@@ -220,7 +222,7 @@ input[type="submit"] {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -286,7 +288,7 @@ input[type="submit"] {
   padding-left: 16px;
   margin-top: 3px;
   margin-bottom: 3px;
-  }
+}
 
 .carte-hebergement .premiere-etoile {
   padding-left: 16px;
@@ -301,7 +303,7 @@ input[type="submit"] {
 }
 
 aside {
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -342,7 +344,7 @@ aside i {
   width: 33%;
   height: 144px;
   padding-bottom: 2%;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
 .carte-populaire img {
@@ -419,7 +421,7 @@ aside i {
 .format-image-activites {
   width: 100%;
   height: 380px;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
 .carte-activite img {
@@ -473,7 +475,7 @@ footer {
     margin-bottom: 0px;
     gap: 0px;
   }
-  
+
   .filtres p {
     margin-bottom: 25px;
   }
@@ -531,7 +533,7 @@ footer {
     padding-left: 0px;
     padding-right: 5px;
   }
-  
+
   .carte-hebergement {
     max-width: 30%;
     max-height: 207px;
@@ -553,12 +555,12 @@ footer {
   .hebergements h3 {
     margin-left: 30px;
   }
-  
+
   .carte-hebergement h4 {
     margin-top: 2px;
     padding-left: 16px;
   }
-  
+
   .carte-hebergement p {
     display: block;
     font-size: 14px;
@@ -569,13 +571,13 @@ footer {
   }
 
   aside {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 0px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
   }
-  
+
   .entete-populaire {
     display: flex;
     justify-content: space-between;
@@ -583,7 +585,7 @@ footer {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-  
+
   .mosaic-populaire {
     display: flex;
     flex-direction: row;
@@ -591,9 +593,9 @@ footer {
     gap: 20px;
     margin-left: 0px;
     margin-top: 0px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
   }
-  
+
   .carte-populaire {
     max-width: 33%;
     border-radius: 20px;
@@ -602,7 +604,7 @@ footer {
   .format-image-populaire {
     width: 33.2%;
     max-height: 98%;
-    object-fit: cover;  
+    object-fit: cover;
   }
 
   .carte-populaire img {
@@ -622,7 +624,7 @@ footer {
     margin-top: 5px;
     margin-bottom: 10px;
   }
-  
+
   .carte-activite {
     width: 23%;
     max-width: 193.5px;
@@ -631,7 +633,7 @@ footer {
   .format-image-activites {
     width: 100%;
     max-height: 200px;
-    object-fit: cover;  
+    object-fit: cover;
   }
 
   .carte-activite h4 {
@@ -650,7 +652,7 @@ footer {
   .colonne-3 {
     margin-left: 29px;
   }
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -665,7 +667,7 @@ footer {
   header img {
     margin-top: 0px;
   }
-  
+
   nav {
     width: 100%;
     display: flex;
@@ -721,7 +723,7 @@ footer {
 
   .recherche {
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 20px;
   }
 
   i[class="fa-solid fa-location-dot location"] {
@@ -758,7 +760,7 @@ footer {
   button i {
     font-size: 1em;
     color: white;
-  } 
+  }
 
   .texte-filtre {
     display: block;
@@ -844,7 +846,7 @@ footer {
   .carte-populaire p {
     margin-bottom: 0px;
   }
-  
+
   .hebergements {
     order: 1;
     background-color: white;
@@ -865,7 +867,7 @@ footer {
     max-width: 100%;
     max-height: 207px;
   }
-  
+
   .format-image-hebergement {
     width: 99%;
     height: 60%;
@@ -875,7 +877,8 @@ footer {
   .hebergements h2 {
     margin-top: -10px;
     margin-left: 0px;
-}
+  }
+
   .hebergements h3 {
     margin-top: 15px;
     margin-bottom: 0px;
@@ -915,9 +918,9 @@ footer {
   .format-image-activites {
     width: 100%;
     height: 141px;
-    object-fit: cover;  
+    object-fit: cover;
   }
-  
+
   .carte-activite h4 {
     height: 44px;
     border-radius: 0px 0px 20px 20px;
@@ -926,7 +929,7 @@ footer {
     padding-left: 20px;
     padding-bottom: 40px;
   }
-  
+
   footer {
     max-width: 768px;
     background-color: #F2F2F2;
@@ -940,13 +943,13 @@ footer {
     margin-right: 0px;
     margin-top: 65px;
   }
-  
+
   .colonne {
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 30px;
   }
-  
+
   .colonne h3 {
     margin-bottom: 15px;
   }
