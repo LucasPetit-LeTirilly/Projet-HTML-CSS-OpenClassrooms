@@ -114,12 +114,13 @@ h4 {
 
 .recherche .location {
   background-color: #F2F2F2;
+  height: 48px;
   padding: 18px 16px 18px 16px;
   border-radius: 40% 0% 0% 40%;
 }
 
 input[type="text"] {
-  width: 220px;
+  width: 55%;
   height: 48px;
   font-size: 18px;
   font-weight: 700;
@@ -131,7 +132,7 @@ input[type="text"] {
 
 input[type="submit"] {
   width: 130px;
-  height: 52px;
+  height: 48px;
   font-weight: 700;
   font-size: 18px;
   background-color: #0065FC;
