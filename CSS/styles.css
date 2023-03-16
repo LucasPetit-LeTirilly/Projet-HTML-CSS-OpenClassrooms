@@ -45,11 +45,12 @@ a {
 nav a {
   font-weight: 500;
   font-size: 1rem;
-  padding: 13px 25px 46px 25px;
+  padding: 13px 0px 46px 0px;
+  margin-left: 69px;
 }
 
 nav {
-  margin-right: 16px;
+  margin-right: 50px;
 }
 
 nav a:hover {
@@ -459,11 +460,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
-  nav {
-    margin-right: 0px;
+  main {
+    margin-right: 50px;
   }
 
-  main {
+  nav {
     margin-right: 50px;
   }
 
